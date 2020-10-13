@@ -56,3 +56,4 @@ binarySearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 
 1. [Wikipedia - Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 1. [GeeksForGeeks](https://www.geeksforgeeks.org/binary-search/)
+1. [Google AI Blog - bug solved in large array search](https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html)
