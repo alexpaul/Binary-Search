@@ -46,7 +46,7 @@ binarySearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 
 ##### Challenge 1 - Binary Search
 
-[LeetCode - binary search](https://leetcode.com/problems/binary-search/)
+[LeetCode](https://leetcode.com/problems/binary-search/)
 
 #### Challenge 2 - First bad version 
 
