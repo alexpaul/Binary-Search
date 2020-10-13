@@ -83,6 +83,10 @@ binarySearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 
 [LeetCode](https://leetcode.com/problems/first-bad-version/)
 
+#### Challenge 4 - Write binary search using recursion 
+
+Write binary search using recursion
+
 ## Resources 
 
 1. [Wikipedia - Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
