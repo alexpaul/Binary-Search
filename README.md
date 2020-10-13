@@ -44,7 +44,7 @@ func binarySearch(_ nums: [Int], _ target: Int) -> Int {
 binarySearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 ```
 
-In the `binarySearch` function above the runtime is drastically faster as we are using a divide and conquer algorithm and cutting the problem in half on every iteration. Our runtime is logorithmic at `O(logn)` . Worst case searching a million elements, we would have to iterate 20 times, yep 20. 🥳 🤯 Binary search wins...
+In the `binarySearch` function above the runtime is drastically faster as we are using a divide and conquer algorithm and cutting the problem in half on every iteration. Our runtime is logorithmic at `O(logn)` . Worst case searching a million elements, we would have to iterate 20 times, yep 20. 🥳  🤯  Binary search wins...
 
 [Try it here using a log calculator](https://www.rapidtables.com/calc/math/Log_Calculator.html)
 
