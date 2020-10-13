@@ -19,7 +19,7 @@ func linearSearch(_ nums: [Int], _ target: Int) -> Int {
 linearSearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 ```
 
-In the above `linearSearch` solution the runtime is `O(n)`
+In the above `linearSearch` function the runtime is `O(n)`
 
 ## 2. Binary Search 
 
@@ -44,7 +44,7 @@ func binarySearch(_ nums: [Int], _ target: Int) -> Int {
 binarySearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 ```
 
-In this `binarySearch` solutiion the runtime is drastically faster as we are using a divide and conquer algorithm and cutting the problem in half on every iteration. Our runtime is logorithmic at `O(logn)` .
+In the `binarySearch` function above the runtime is drastically faster as we are using a divide and conquer algorithm and cutting the problem in half on every iteration. Our runtime is logorithmic at `O(logn)` .
 
 ## Challenges 
 
