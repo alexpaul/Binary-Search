@@ -19,7 +19,7 @@ func linearSearch(_ nums: [Int], _ target: Int) -> Int {
 linearSearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 ```
 
-In the above `linearSearch` function the runtime is `O(n)`
+In the above `linearSearch` function the runtime is `O(n)`. Worst case searching a million elements, we would have to iterated through a million elements. 😱
 
 ## 2. Binary Search 
 
@@ -44,7 +44,9 @@ func binarySearch(_ nums: [Int], _ target: Int) -> Int {
 binarySearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 ```
 
-In the `binarySearch` function above the runtime is drastically faster as we are using a divide and conquer algorithm and cutting the problem in half on every iteration. Our runtime is logorithmic at `O(logn)` .
+In the `binarySearch` function above the runtime is drastically faster as we are using a divide and conquer algorithm and cutting the problem in half on every iteration. Our runtime is logorithmic at `O(logn)` . Worst case searching a million elements, we would have to iterate 20 times, yep 20. 🥳 🤯 Binary search wins...
+
+[Try it here using a log calculator](https://www.rapidtables.com/calc/math/Log_Calculator.html)
 
 ## Challenges 
 
@@ -61,3 +63,4 @@ In the `binarySearch` function above the runtime is drastically faster as we are
 1. [Wikipedia - Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 1. [GeeksForGeeks](https://www.geeksforgeeks.org/binary-search/)
 1. [Google AI Blog - bug solved in large array search](https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html)
+1. [Log Calculator](https://www.rapidtables.com/calc/math/Log_Calculator.html)
