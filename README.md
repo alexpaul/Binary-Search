@@ -19,7 +19,7 @@ func linearSearch(_ nums: [Int], _ target: Int) -> Int {
 linearSearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 ```
 
-In the above `linearSearch` function the runtime is `O(n)`. Worst case searching a million elements, we would have to iterated through a million elements. 😱
+In the above `linearSearch` function the runtime is `O(n)`. Worst case searching a million elements, we would have to iterate through a million elements. 😱
 
 ## 2. Binary Search 
 
