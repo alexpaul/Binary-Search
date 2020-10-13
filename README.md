@@ -23,6 +23,8 @@ In the above `linearSearch` function the runtime is `O(n)`. Worst case searching
 
 ## 2. Binary Search 
 
+![binary search sketch](https://user-images.githubusercontent.com/1819208/95866495-fc2a7200-0d35-11eb-9c03-23cadc22d0a4.jpg)
+
 ```swift 
 func binarySearch(_ nums: [Int], _ target: Int) -> Int {
   var low = 0
