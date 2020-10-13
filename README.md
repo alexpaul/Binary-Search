@@ -52,7 +52,7 @@ In the `binarySearch` function above the runtime is drastically faster as we are
 
 ## Challenges 
 
-##### Challenge 1 - Convert the binary search solution to be a generic function that works with any type
+#### Challenge 1 - Convert the binary search solution to be a generic function that works with any type
 
 ```swift 
 func binarySearch(_ nums: [Int], _ target: Int) -> Int {
@@ -75,7 +75,7 @@ func binarySearch(_ nums: [Int], _ target: Int) -> Int {
 binarySearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
 ```
 
-##### Challenge 2 - Binary Search
+#### Challenge 2 - Binary Search
 
 [LeetCode](https://leetcode.com/problems/binary-search/)
 
