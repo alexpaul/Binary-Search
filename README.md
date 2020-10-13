@@ -50,11 +50,34 @@ In the `binarySearch` function above the runtime is drastically faster as we are
 
 ## Challenges 
 
-##### Challenge 1 - Binary Search
+##### Challenge 1 - Convert the binary search solution to be a generic function that works with any type
+
+```swift 
+func binarySearch(_ nums: [Int], _ target: Int) -> Int {
+  var low = 0
+  var high = nums.count
+  
+  while low < high {
+    let middleIndex = low + (high - low) / 2 // divide in half each time => O(log n)
+    if nums[middleIndex] == target {
+      return middleIndex
+    } else if nums[middleIndex] > target { // look left
+      high = middleIndex
+    } else { // look right
+      low = middleIndex + 1
+    }
+  }
+  return -1
+}
+
+binarySearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
+```
+
+##### Challenge 2 - Binary Search
 
 [LeetCode](https://leetcode.com/problems/binary-search/)
 
-#### Challenge 2 - First bad version 
+#### Challenge 3 - First bad version 
 
 [LeetCode](https://leetcode.com/problems/first-bad-version/)
 
