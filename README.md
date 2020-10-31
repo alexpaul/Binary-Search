@@ -2,7 +2,9 @@
 
 Binary Search in Swift. 
 
-> Wikipedia: In computer science, binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array. Binary search algorithm runtime of `O(log n)` has a more optimal runtime as opposed to linear search `O(n)`. 
+> Wikipedia: In computer science, binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array. 
+
+Binary search algorithm runtime of `O(log n)` has a more optimal runtime due to its use of `divide and conquer` as opposed to linear search `O(n)` which visits each element during search. Runtimes shown in the [Big O chart](https://www.bigocheatsheet.com/) below. 
 
 ![big O cheatsheet](https://camo.githubusercontent.com/99bb7ce9057401d1ea21a98e907c9dffe40daf74/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313230302f312a5f6e734d5645456b49723143483861486a544e627a412e6a706567)
 
