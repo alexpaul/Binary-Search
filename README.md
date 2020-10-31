@@ -7,8 +7,8 @@ Binary Search in Swift.
 ## 1. Linear Search 
 
 ```swift 
-func linearSearch(_ nums: [Int], _ target: Int) -> Int {
-  for (index, num) in nums.enumerated() { // O(n)
+func linearSearch(_ arr: [Int], _ target: Int) -> Int {
+  for (index, num) in arr.enumerated() { // for loop runs O(n) times e.g 15 times if 16 elements and target is last
     if num == target {
       return index
     }
@@ -16,7 +16,7 @@ func linearSearch(_ nums: [Int], _ target: Int) -> Int {
   return -1
 }
 
-linearSearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
+linearSearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], 16) // index 15 returned
 ```
 
 In the above `linearSearch` function the runtime is `O(n)`. Worst case searching a million elements, we would have to iterate through a million elements. 😱
@@ -26,24 +26,23 @@ In the above `linearSearch` function the runtime is `O(n)`. Worst case searching
 ![binary search sketch](https://user-images.githubusercontent.com/1819208/95866495-fc2a7200-0d35-11eb-9c03-23cadc22d0a4.jpg)
 
 ```swift 
-func binarySearch(_ nums: [Int], _ target: Int) -> Int {
+func binarySearch(_ arr: [Int], _ target: Int) -> Int {
   var low = 0
-  var high = nums.count
-  
-  while low < high {
-    let middleIndex = low + (high - low) / 2 // divide in half each time => O(log n)
-    if nums[middleIndex] == target {
+  var high = arr.count
+  while low < high { // while loop runs O(log n) times e.g will be 4 times, worst case target is the last of 16 elements
+    let middleIndex = low + (high - low) / 2
+    if arr[middleIndex] == target {
       return middleIndex
-    } else if nums[middleIndex] > target { // look left
+    } else if arr[middleIndex] > target { // go left
       high = middleIndex
-    } else { // look right
+    } else { // go right
       low = middleIndex + 1
     }
   }
   return -1
 }
 
-binarySearch([-6, 2, 5, 9, 11, 45, 78], 2) // index 1 returned
+binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], 16) // index 15 returned
 ```
 
 In the `binarySearch` function above the runtime is drastically faster as we are using a divide and conquer algorithm and cutting the problem in half on every iteration. Our runtime is logorithmic at `O(logn)` . Worst case searching a million elements, we would have to iterate 20 times, yep 20. 🥳  🤯  Binary search wins...linear would be 1 million times in the worst case scenario that the target element is last in the collection.
